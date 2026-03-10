@@ -166,3 +166,4 @@ Reiniciamos el agente GPG
 ```
 gpgconf --kill gpg-agent
 ```
+

@@ -90,22 +90,22 @@ mQENBF...
 ```
 gpg --armor --export 0F685EDC2C61527E > pcruz.asc
 ```
-### Paso 6 (Agregar Llave Pública a Github)
+## Paso 6 (Agregar Llave Pública a Github)
 
-#### 1 Dentro de Github
+### 1 Dentro de Github
 
 * Visitar  [Settings > SSH and GPG Keys](https://github.com/settings/keys).
 * Click en **New GPG key or Add GPG key**.
 
-#### Pegar la Llave:
+### Pegar la Llave:
 
 * La llave pública generada anteriormente se la pega dentro de la caja de texto.
 
-#### Guardar:
+### Guardar:
 
 * Guardar la llave.
 
-## Paso 6 (Configurar Git para usar la llave GPG)
+## Paso 7 (Configurar Git para usar la llave GPG)
 
 #### 1.- Enlazar la llave GPG con Git
 
@@ -128,7 +128,7 @@ git config --global --list
 user.signingkey=0F685EDC2C61527E
 commit.gpgsign=true
 ```
-## Paso 6 (Verificar el firmado)
+## Paso 8 (Verificar el firmado)
 Una vez realizado un commit de manera local. Procedemos a verificar
 ```
 git log --show-signature -1
